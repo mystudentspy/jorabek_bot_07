@@ -4,3 +4,4 @@ rt = Router()
 async def start(msg: types.Message):
     await msg.answer("xush kelibsiz, xurmatli foydalanuvchi")
     await msg.answer("nima xizmat aka?")
+    print("hello world")
