@@ -5,7 +5,7 @@ hammasi = [
    "AgACAgIAAxkBAAI3PGrgNkd0yN9t-5W6dKDWGxqfuHVMAAKRG2sbN9wAAUtcYSol5wTocwEAAwIAA3gAAz0E"
 ]
 @rt.message(F.photo)
-async def kod(msg: types.Message):
+async def salom(msg: types.Message):
    await msg.answer_photo(hammasi[1])
    if msg.contact:
       c = msg.contact
