@@ -22,6 +22,7 @@ from handlers.users.text import rt as text
 from handlers.users.contak import rt as nomer
 from handlers.users.kontak import rt as kontak
 from handlers.users.hamma_kod import rt as kodlar
+from handlers.users.new_chat_members import rt as chat
 dp = Dispatcher()
 async def main():
     bot = Bot(BOT_TOKEN)
@@ -41,7 +42,7 @@ async def main():
     dp.include_router(nomer)
     # dp.include_router(kodlar)
     dp.include_router(kontak)
-
+    dp.include_router(chat)
 
 
 
