@@ -23,6 +23,9 @@ from handlers.users.contak import rt as nomer
 from handlers.users.kontak import rt as kontak
 from handlers.users.hamma_kod import rt as kodlar
 from handlers.users.new_chat_members import rt as members
+from handlers.users.photo import rt as photo
+from handlers.users.new_title import rt as title
+
 dp = Dispatcher()
 async def main():
     bot = Bot(BOT_TOKEN)
@@ -43,8 +46,8 @@ async def main():
     # # dp.include_router(kodlar)
     # dp.include_router(kontak)
     dp.include_router(members)
-    #
-    #
+    dp.include_router(photo)
+    dp.include_router(title)
     #
     # dp.include_router(test)
 
