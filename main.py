@@ -22,32 +22,31 @@ from handlers.users.text import rt as text
 from handlers.users.contak import rt as nomer
 from handlers.users.kontak import rt as kontak
 from handlers.users.hamma_kod import rt as kodlar
-from handlers.users.new_chat_members import rt as chat
+from handlers.users.new_chat_members import rt as members
 dp = Dispatcher()
 async def main():
     bot = Bot(BOT_TOKEN)
-    dp.include_router(start)
-    dp.include_router(help)
-    dp.include_router(rasm)
-    dp.include_router(me)
+    # dp.include_router(start)
+    # dp.include_router(help)
+    # dp.include_router(rasm)
+    # dp.include_router(me)
     dp.include_router(soat)
-    dp.include_router(chat_id)
-    dp.include_router(photo)
-    dp.include_router(ovoz)
-    dp.include_router(stiker)
-    dp.include_router(dice)
-    dp.include_router(manzil)
-    dp.include_router(gif)
-    # dp.include_router(text)
-    dp.include_router(nomer)
-    # dp.include_router(kodlar)
-    dp.include_router(kontak)
-    dp.include_router(chat)
-
-
-
-
-    dp.include_router(test)
+    # dp.include_router(chat_id)
+    # dp.include_router(photo)
+    # dp.include_router(ovoz)
+    # dp.include_router(stiker)
+    # dp.include_router(dice)
+    # dp.include_router(manzil)
+    # dp.include_router(gif)
+    # # dp.include_router(text)
+    # dp.include_router(nomer)
+    # # dp.include_router(kodlar)
+    # dp.include_router(kontak)
+    dp.include_router(members)
+    #
+    #
+    #
+    # dp.include_router(test)
 
 
 
