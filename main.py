@@ -64,3 +64,4 @@ if __name__ == "__main__":
         print("internetga yo'q")
     except TelegramUnauthorizedError:
         print("token xato!")
+print(111)
